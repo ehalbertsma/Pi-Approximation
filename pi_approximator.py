@@ -10,11 +10,11 @@ from numpy import zeros
 from numpy import sum
 
 # declare parameters
-n = 100
-points = 100000
+n = 10
+points = 1000000
 
 # declare storage variables
-circles = pis = zeros((1,n))
+pis = zeros((n,1))
 
 for i in range(n): # independently approximate n number of pi_hats
     circle = 0
