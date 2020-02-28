@@ -18,7 +18,7 @@ pis = zeros((n,1))
 
 for i in range(n): # independently approximate n number of pi_hats
     circle = 0
-    for i in range(points): # number of darts to throw
+    for j in range(points): # number of darts to throw
         a,b=rd.random(),rd.random() # throw point at the dartboard uniformly
         if a**2+b**2<=1: # if the distance from the origin is greater than 1, it is by defn outside the circle
             circle+=1 # counts the number of points inside the circle
