@@ -1,6 +1,8 @@
 # Pi-Approximation
 _Uses nothing but a uniform random number generator to approximate pi_
 
+![Visualization of Process](https://github.com/ehalbertsma/Pi-Approximation/blob/master/out.png)
+
 ## Theory:
 Consider a circular dartboard of radius 1 centred at the origin on a cardboard square of area 4. If we throw darts at the board, then there should be a roughly equal density <img src="https://render.githubusercontent.com/render/math?math=\rho"> of darts on the dartboard, and of darts on the cardboard around the outside of the dartboard. Note that we are assuming a uniform distribution and considering only darts that are at least inside the square.
 
@@ -21,4 +23,4 @@ We consider the first number an x-coordinate and the second number a y-coordinat
 If it is in the circle, we count it, and otherwise it is in the square. After the desired number of iterations, the formula above calculates pi.
 
 ## Performance
-Upon running the program 10 times with 1,000,000 "darts", the value of pi was accurate to decimals.
+Upon running the program 10 times with 1,000,000 "darts", the value of pi was accurate to 4 decimals.
