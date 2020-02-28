@@ -11,12 +11,13 @@ And the number of darts outside the circle (and thus in the square) is approxima
 <img src="https://render.githubusercontent.com/render/math?math=n_{circle} = \rho A_{square} = \rho \times 4">
 
 If we divide the darts inside and outside the square:
-<img src="https://render.githubusercontent.com/render/math?math={n_{circle}}/{n_square}} = \pi/4">
+<img src="https://render.githubusercontent.com/render/math?math=n_{circle}/n_{square} = \pi/4">
 
 ## Execution:
 In my program, we only consider numbers in the first quadrant to simplify calculations. Thus, we generate two floating point numbers in the interval <img src="https://render.githubusercontent.com/render/math?math=[0,1)">. Since the ratio of areas remains the same, the formula does not change.
 We consider the first number an x-coordinate and the second number a y-coordinate. This lets us check whether the point is on the circle by evaluating: 
-<img src="https://render.githubusercontent.com/render/math?math=x^2+y^2\leq 1">
+<img src="https://render.githubusercontent.com/render/math?math=x^2 + y^2 \leq 1">
+
 If it is in the circle, we count it, and otherwise it is in the square. After the desired number of iterations, the formula above calculates pi.
 
 ## Performance
